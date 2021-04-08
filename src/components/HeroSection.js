@@ -66,7 +66,10 @@ export default class HeroSection extends React.Component {
                 				<div className="hero__copy">
                 					{markdownify(_.get(section, 'content', null))}
                 				</div>
-                				)}
+                                )}
+                                {_.get(this.props, 'data.config.footer.content', null) && (
+                						<span>{htmlToReact(_.get(this.props, 'data.config.footer.content', null))}</span>
+                					)}
                 				{_.get(section, 'actions', null) && (
                 				<div className={classNames('hero__actions', 'btn-group', {'justify-center': align_x === 'center', 'justify-end': align_x === 'right'})}>
                 					<SectionActions {...this.props} actions={_.get(section, 'actions', null)} />
