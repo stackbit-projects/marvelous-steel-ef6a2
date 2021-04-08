@@ -67,11 +67,11 @@ export default class HeroSection extends React.Component {
                 					{markdownify(_.get(section, 'content', null))}
                 				</div>
                                 )}
-                                {_.get(this.props, 'scripts', null) && (
+                                {_.get(this.props, 'script', null) && (
                 						<span>{htmlToReact(_.get(this.props, 'scripts', null))}</span>
                                     )}
                                 {_.get(section, 'scripts', null) && (
-                						<span>{htmlToReact(_.get(section, 'scripts', null))}</span>
+                						<span>{htmlToReact(_.get(section, 'script', null))}</span>
                 					)}
                 				{_.get(section, 'actions', null) && (
                 				<div className={classNames('hero__actions', 'btn-group', {'justify-center': align_x === 'center', 'justify-end': align_x === 'right'})}>
