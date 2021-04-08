@@ -485,6 +485,10 @@ models:
           type: model
           models:
             - action
+            - type: string
+        name: content
+        label: Footer content
+        description: The copyright text
       - type: image
         name: image
         label: Image
