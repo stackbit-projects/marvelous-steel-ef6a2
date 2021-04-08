@@ -30,7 +30,16 @@ sections:
       style="min-width:320px;height:630px;"></div> <script
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"
-      async></script> <!-- Calendly inline widget end -->
+      async></script> <!-- Calendly inline widget end --><!-- Calendly badge
+      widget begin --><link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"><script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript" async></script><script
+      type="text/javascript">window.onload = function() {
+      Calendly.initBadgeWidget({ url: 'https://calendly.com/stormwell', text:
+      'Schedule time with me', color: '#00a2ff', textColor: '#ffffff', branding:
+      true }); }</script><!-- Calendly badge widget end -->
   - type: grid_section
     title: 'Read by marketers at:'
     align: center
