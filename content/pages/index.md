@@ -25,15 +25,14 @@ sections:
     background_color: none
     script_content: <script>alert("hello world")</script>
     script: >-
-      <!-- Calendly badge widget begin --> <link
+      <!-- Calendly link widget begin --> <link
       href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"> <script
       src="https://assets.calendly.com/assets/external/widget.js"
-      type="text/javascript" async></script> <script
-      type="text/javascript">window.onload = function() {
-      Calendly.initBadgeWidget({ url: 'https://calendly.com/stormwell', text:
-      'Schedule time with me', color: '#00a2ff', textColor: '#ffffff', branding:
-      true }); }</script> <!-- Calendly badge widget end -->
+      type="text/javascript" async></script> <a href=""
+      onclick="Calendly.initPopupWidget({url:
+      'https://calendly.com/stormwell'});return false;">Schedule time with
+      me</a> <!-- Calendly link widget end -->
   - type: grid_section
     title: 'Read by marketers at:'
     align: center
