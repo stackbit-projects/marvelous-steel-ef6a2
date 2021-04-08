@@ -486,7 +486,7 @@ models:
           models:
             - action
       - type: string
-        name: content
+        name: script_content
         label: Script content
         description: Add or embed script
       - type: image
