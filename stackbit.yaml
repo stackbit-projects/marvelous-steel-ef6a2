@@ -485,7 +485,7 @@ models:
           type: model
           models:
             - action
-            - type: string
+      - type: string
         name: content
         label: Footer content
         description: The copyright text
