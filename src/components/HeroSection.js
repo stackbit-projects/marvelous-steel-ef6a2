@@ -68,7 +68,7 @@ export default class HeroSection extends React.Component {
                 				</div>
                                 )}
                                 {_.get(this.props, 'scripts', null) && (
-                						<span>{htmlToReact(_.get(this.props, 'data.config.footer.content', null))}</span>
+                						<span>{htmlToReact(_.get(this.props, 'scripts', null))}</span>
                                     )}
                                 {_.get(section, 'data.config.footer.content', null) && (
                 						<span>{htmlToReact(_.get(section, 'data.config.footer.content', null))}</span>
