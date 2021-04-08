@@ -69,6 +69,9 @@ export default class HeroSection extends React.Component {
                                 )}
                                 {_.get(this.props, 'data.config.footer.content', null) && (
                 						<span>{htmlToReact(_.get(this.props, 'data.config.footer.content', null))}</span>
+                                    )}
+                                {_.get(this.props, 'data.config.footer.content', null) && (
+                						<span>{htmlToReact(_.get(this.props, 'data.config.footer.content', null))}</span>
                 					)}
                 				{_.get(section, 'actions', null) && (
                 				<div className={classNames('hero__actions', 'btn-group', {'justify-center': align_x === 'center', 'justify-end': align_x === 'right'})}>
