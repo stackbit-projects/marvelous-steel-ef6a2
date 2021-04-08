@@ -24,6 +24,7 @@ sections:
     padding_bottom: large
     background_color: none
     script_content: <script>alert("hello world")</script>
+    script: <script>alert("hello world")</script>
   - type: grid_section
     title: 'Read by marketers at:'
     align: center
