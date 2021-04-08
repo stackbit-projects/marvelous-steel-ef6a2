@@ -487,7 +487,7 @@ models:
             - action
       - type: string
         name: content
-        label: Footer content
+        label: Script content
         description: Add or embed script
       - type: image
         name: image
