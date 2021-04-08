@@ -24,7 +24,15 @@ sections:
     padding_bottom: large
     background_color: none
     script_content: <script>alert("hello world")</script>
-    script: "<!-- Calendly link widget begin --> <link\_ href=\"https://assets.calendly.com/assets/external/widget.css\" rel=\"stylesheet\"> <script src=\"https://assets.calendly.com/assets/external/widget.js\" type=\"text/javascript\" async></script> <a href=\"\" onclick=\"Calendly.initPopupWidget({url: 'https://calendly.com/stormwell'});return false;\">Schedule time with me</a> <!-- Calendly link widget end -->"
+    script: >-
+      <!-- Calendly link widget begin --> <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"> <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript" async></script> <a href=""
+      onclick="Calendly.initPopupWidget({url:
+      'https://calendly.com/stormwell'});return false;">Schedule time with
+      me</a> <!-- Calendly link widget end -->
   - type: grid_section
     title: 'Read by marketers at:'
     align: center
