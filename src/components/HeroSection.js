@@ -67,10 +67,7 @@ export default class HeroSection extends React.Component {
                 					{markdownify(_.get(section, 'content', null))}
                 				</div>
                                 )}
-                                {_.get(this.props, 'script', null) && (
-                						<span>{htmlToReact(_.get(this.props, 'scripts', null))}</span>
-                                    )}
-                                {_.get(section, 'scripts', null) && (
+                                {_.get(section, 'script', null) && (
                 						<span>{htmlToReact(_.get(section, 'script', null))}</span>
                 					)}
                 				{_.get(section, 'actions', null) && (
