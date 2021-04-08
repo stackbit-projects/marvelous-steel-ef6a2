@@ -24,7 +24,13 @@ sections:
     padding_bottom: large
     background_color: none
     script_content: <script>alert("hello world")</script>
-    script: <script>console.log('Hello')</script>
+    script: >-
+      <!-- Calendly inline widget begin --> <div class="calendly-inline-widget"
+      data-url="https://calendly.com/stormwell"
+      style="min-width:320px;height:630px;"></div> <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async></script> <!-- Calendly inline widget end -->
   - type: grid_section
     title: 'Read by marketers at:'
     align: center
